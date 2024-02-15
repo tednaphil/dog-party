@@ -1,3 +1,19 @@
 $main-accent-color: #3F8DA8;
 $secondary-accent-color: #92E0E5;
 $primary-font: 'Raleway', sans-serif;
+
+@mixin centered() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin outline($weight) {
+    outline: solid $main-accent-color $weight;
+    border-radius: 50%;
+}
+
+@mixin footer-text() {
+    text-transform: capitalize;
+    font-weight: 450;
+    letter-spacing: .5px;
+}
