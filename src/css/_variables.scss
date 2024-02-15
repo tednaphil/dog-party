@@ -17,6 +17,15 @@ $primary-font: 'Raleway', sans-serif;
     border-radius: 50%;
 }
 
+@mixin button-style() {
+    background-color: white;
+    color: $main-accent-color;
+    border: solid $main-accent-color 4px;
+    margin: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 @mixin footer-text() {
     text-transform: capitalize;
     font-weight: 450;

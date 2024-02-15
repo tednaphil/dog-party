@@ -10,7 +10,6 @@
 body {
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
-  // width: 100%;
   background-size: cover;
   margin: 0px;
 }
@@ -52,8 +51,41 @@ h1 {
   @include outline(4px);
 }
 
-section {
+.button-wrapper {
+  @include centered;
+}
+
+.buttons {
+  @include button-style;
+}
+
+.profile-section {
   background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dog-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  img {
+    @include outline(3px);
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+.profile-photo {
+  width: 220px;
 }
 
 footer {
