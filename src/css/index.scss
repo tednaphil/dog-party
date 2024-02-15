@@ -16,8 +16,7 @@ body {
 
 nav {
   background-color: $secondary-accent-color;
-  display: flex;
-  justify-content: space-between;
+  @include spreadout;
 }
 
 .dog-icon {
@@ -28,12 +27,12 @@ nav {
 
 .links-wrapper {
   @include spreadout;
-  width: 300px;
+  width: 280px;
   padding-right: 20px;
   list-style-type: none;
-  color: white;
+  color: $primary-color;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -44,10 +43,10 @@ h1 {
 
 .main-image-wrapper {
   @include centered;
-}
-
-.main-dog {
-  @include outline(4px);
+  
+  img {
+    @include outline(4px);
+  }
 }
 
 .button-wrapper {
@@ -59,7 +58,7 @@ h1 {
 }
 
 .profile-section {
-  background-color: white;
+  background-color: $primary-color;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 15px;
@@ -69,6 +68,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   h2 {
     font-weight: 400;
     font-size: 1.2rem;
@@ -76,7 +76,8 @@ h1 {
   }
 
   img {
-    @include outline(3px);
+    @include outline(2px);
+    width: 220px;
   }
 
   p {
@@ -88,14 +89,9 @@ h1 {
   }
 }
 
-.profile-photo {
-  width: 220px;
-}
-
 footer {
   background-color: $main-accent-color;
-  color: white;
-  text-align: center;
+  color: $primary-color;
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
