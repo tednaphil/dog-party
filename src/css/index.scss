@@ -15,7 +15,6 @@ body {
 }
 
 nav {
-  // Example of using a variable:
   background-color: $secondary-accent-color;
   display: flex;
   justify-content: space-between;
@@ -29,12 +28,12 @@ nav {
 
 .links-wrapper {
   @include spreadout;
-  width: 220px;
+  width: 300px;
   padding-right: 20px;
   list-style-type: none;
   color: white;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -63,6 +62,7 @@ h1 {
   background-color: white;
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 15px;
 }
 
 .dog-profile {
@@ -71,7 +71,8 @@ h1 {
   align-items: center;
   h2 {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 35px;
   }
 
   img {
@@ -80,7 +81,10 @@ h1 {
 
   p {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
