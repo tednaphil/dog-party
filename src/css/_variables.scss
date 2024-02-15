@@ -7,6 +7,11 @@ $primary-font: 'Raleway', sans-serif;
     justify-content: center;
 }
 
+@mixin spreadout() {
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin outline($weight) {
     outline: solid $main-accent-color $weight;
     border-radius: 50%;

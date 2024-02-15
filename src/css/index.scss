@@ -29,9 +29,8 @@ nav {
 }
 
 .links-wrapper {
-  display: flex;
+  @include spreadout;
   width: 220px;
-  justify-content: space-between;
   padding-right: 20px;
   list-style-type: none;
   color: white;
@@ -46,13 +45,40 @@ h1 {
 }
 
 .main-image-wrapper {
-  display: flex;
-  justify-content: center;
+  @include centered;
 }
 
 .main-dog {
-  outline: solid $main-accent-color 4px;
-  border-radius: 50%;
+  @include outline(4px);
 }
 
+section {
+  background-color: white;
+}
+
+footer {
+  background-color: $main-accent-color;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  @include footer-text;
+}
+
+.contact-icons {
+  @include spreadout;
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+a {
+  @include footer-text;
+  text-decoration: underline;
+  margin-top: 20px;
+}
 
